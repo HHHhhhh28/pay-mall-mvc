@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 微信服务对接，对接地址：<a href="http://xfg-studio.natapp1.cc/api/v1/weixin/portal/receive">/api/v1/weixin/portal/receive</a>
+ * 微信服务对接，对接地址：<a href="http://zky.nat300.top/api/v1/weixin/portal/receive">/api/v1/weixin/portal/receive</a>
  * <p>
  * http://zky.nat300.top/api/v1/weixin/portal/receive/
  */
@@ -73,7 +73,7 @@ public class WeixinPortalController {
                 loginService.saveLoginState(message.getTicket(), openid);
                 return buildMessageTextEntity(openid, "登录成功");
             }
-            return buildMessageTextEntity(openid, "你好何文新，" + message.getContent());
+            return buildMessageTextEntity(openid, "你好，" + message.getContent());
         } catch (Exception e) {
             log.error("接收微信公众号信息请求{}失败 {}", openid, requestBody, e);
             return "";
