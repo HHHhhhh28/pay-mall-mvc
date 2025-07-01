@@ -37,7 +37,9 @@ build/
 ### Mac OS ###
 .DS_Store
 /data/
-/docs/hhh.html
+/docs/html/hhh.html
 /data/
 /data/
 /docs/html/form.html
+/docs/html/hhh.html
+/s-pay-mall-web/data/

@@ -3,5 +3,5 @@ spring:
     name: s-pay-mall-mvc-zky
   profiles:
 #    active: prod
-    active: dev
+    active: prod
 
